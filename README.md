@@ -6,44 +6,52 @@ This Nuun plugin provides an easy way to inject SLF4J loggers, or to create your
 
 Add the dependency to your pom.xml:
 
-    <dependency>
-        <groupId>io.nuun</groupId>
-        <artifactId>nuun-log-plugin</artifactId>
-        <version>1.0.M1-SNAPSHOT</version>
-    </dependency>
+```xml
+<dependency>
+    <groupId>io.nuun</groupId>
+    <artifactId>nuun-log-plugin</artifactId>
+    <version>1.0.M1-SNAPSHOT</version>
+</dependency>
+```
 
 Then, directly use it in your project.
 
-    public class MyClass {
+```java
+public class MyClass {
 
-        @NuunLog
-        private Logger logger;
+    @NuunLog
+    private Logger logger;
 
-        ...
-    }
+    ...
+}
+```
 
 ## How to create my own logger annotation
 
 Our if you are building a framework and you don't want your user to directly dependend on Nuun API,
 you can create your own logger annotation as follows:
 
-    @Scope
-    @Documented
-    @Retention(RUNTIME)
-    @Target({FIELD})
-    @NuunLog
-    public @interface AnnoCustomLog {
-    }
+```java
+@Scope
+@Documented
+@Retention(RUNTIME)
+@Target({FIELD})
+@NuunLog
+public @interface AnnoCustomLog {
+}
+```
     
 This annotation can now be used in the same way as the `NuunLog` annotation.
 
-    public class MyClass {
+```java
+public class MyClass {
 
-        @AnnoCustomLog
-        private Logger logger;
+    @AnnoCustomLog
+    private Logger logger;
 
-        ...
-    }
+    ...
+}
+```
 
 ## Frequent questions
 
