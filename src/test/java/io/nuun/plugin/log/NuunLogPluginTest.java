@@ -16,8 +16,10 @@
  */
 package io.nuun.plugin.log;
 
+import static io.nuun.kernel.core.NuunCore.createKernel;
+import static io.nuun.kernel.core.NuunCore.newKernelConfiguration;
 import static org.fest.assertions.Assertions.assertThat;
-import io.nuun.kernel.core.Kernel;
+import io.nuun.kernel.api.Kernel;
 import io.nuun.plugin.log.sample.Holder;
 
 import org.junit.Before;
@@ -43,7 +45,15 @@ public class NuunLogPluginTest {
 	@Before
 	public void init ()  {
 		
-		  underTest = Kernel.createKernel().build();
+	  
+	        underTest = createKernel(
+	                //
+	                newKernelConfiguration() //
+
+	                );
+		  
+		  
+		  
 		  underTest.init();
 		  underTest.start();
 		  
