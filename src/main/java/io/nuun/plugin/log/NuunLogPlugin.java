@@ -19,7 +19,7 @@
  */
 package io.nuun.plugin.log;
 
-import io.nuun.kernel.api.plugin.AbstractPlugin;
+import io.nuun.kernel.core.AbstractPlugin;
 
 import com.google.inject.Module;
 
