@@ -67,7 +67,7 @@ public class NuunLogPluginTest {
 
 	            }
 	        };
-	        injector = underTest.getMainInjector().createChildInjector(aggregationModule);
+	        injector = underTest.objectGraph().as(Injector.class).createChildInjector(aggregationModule);
 		
 	}
 

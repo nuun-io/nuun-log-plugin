@@ -19,7 +19,8 @@
  */
 package io.nuun.plugin.log;
 
-import io.nuun.kernel.api.plugin.AbstractPlugin;
+import io.nuun.kernel.api.di.UnitModule;
+import io.nuun.kernel.core.AbstractPlugin;
 
 import com.google.inject.Module;
 
@@ -41,7 +42,7 @@ public class NuunLogPlugin extends AbstractPlugin
     }
     
     @Override
-    public Module dependencyInjectionDef()
+    public Object nativeUnitModule()
     {
         if (logModule == null )
         {
