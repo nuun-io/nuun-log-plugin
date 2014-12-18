@@ -10,7 +10,7 @@ Add the dependency to your pom.xml:
 <dependency>
     <groupId>io.nuun</groupId>
     <artifactId>nuun-log-plugin</artifactId>
-    <version>1.0.M1-SNAPSHOT</version>
+    <version>1.0.M2-SNAPSHOT</version>
 </dependency>
 ```
 
