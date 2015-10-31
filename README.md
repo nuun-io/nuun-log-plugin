@@ -1,4 +1,4 @@
-# Nuun-log-plugin
+# Nuun-log-plugin [![Build status](https://travis-ci.org/nuun-io/nuun-log-plugin.svg?branch=master)](https://travis-ci.org/nuun-io/nuun-log-plugin)[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.nuun/nuun-log-plugin/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/io.nuun/nuun-log-plugin) 
 
 This Nuun plugin provides an easy way to inject SLF4J loggers, or to create your own logger annotation.
 
